@@ -1,0 +1,312 @@
+$colorFondo: rgb(3, 77, 3);
+$colorSec:rgb(64, 116, 64);
+$colorBasico: black;
+
+*{ 
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $colorFondo;
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+}
+header{
+    width: 100%;
+    background: $colorFondo ;
+    height: 75px;
+}
+.ancho{
+    width: 80%;
+    height: 70%;
+    background: $colorFondo;
+    margin: auto;
+}
+.logo{
+    width: 30%;
+    height: 70%;
+    background: $colorFondo;
+    float: left;
+}
+.logo p img{
+    width: 75px;
+    height: 75px;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 70%;
+    height: 70%;
+    background: $colorFondo;
+    float: left;
+    text-align: right;
+    padding-top: 24px;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    color: black;
+    font-size: 11px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+nav ul li a:hover{
+    color: $colorSec;
+}
+.encabezado{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.texto{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.main{
+    width: 90%;
+    max-width: 1200px;
+    margin: 1.6em auto;
+    color: rgb(31, 68, 31);
+
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(2, 1fr);
+    .article1{
+        background: rgb(199, 207, 198);
+        margin-top: 5px;
+        padding: 20px;
+        border-radius: 10px;
+        h1{
+            padding: 10px;
+            font-size: 50px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        p{
+            padding: 10px;
+        }
+    }    
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .asideTexto{
+            color: black;
+            padding-top: 10px;
+            padding-bottom:10px ;
+        }
+    
+         
+    }
+
+            
+
+}
+
+.contenedorForm {
+    padding: 70px 0;
+    text-align: center;
+    
+    h3{
+        font-size: 30px;
+        font-weight: bolder;
+        margin: 20px 0;
+        text-align: center;
+    }
+    .formulario1{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .nombre, .email, .telefono, .asunto, .mensagge{
+
+        background: none;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid $colorSec;
+        padding: 15px 20px;
+        font-size: 13px;
+        color: $colorBasico;
+        transition: all 1s ease;
+        margin-bottom: 20px;
+    }
+    .nombre, .email, .telefono, .asunto{
+        width: 46%;
+        
+    }
+    .mensagge{
+        width: 88%;
+        max-width: 88%;
+        min-width: 88%;
+        min-height: 100px;
+        max-height: 300px;
+    }
+    .nombre:focus,
+    .email:focus,
+    .mensagge:focus,
+    .telefono:focus,
+    .asunto:focus{
+        border-bottom: 3px solid black;
+    }
+    .btn{
+        margin: auto;
+        padding: 15px 25px;
+        font-size: 14px;
+        font-weight: bolder;
+        border: none;
+        background: none;
+        background-color: black;
+        color: $colorSec;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(36, 33, 33);
+    }
+    
+
+    
+
+
+}    
+ 
+footer{
+    background-color:rgb(3, 77, 3);
+    width: 100%;
+    margin-top: 50px;
+    .contenedorFooter{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px;
+    }
+    .contBody{
+    display: flex;
+    justify-content: center;
+    }
+    .column{
+    width: 100%;
+    max-width: 600px;
+    }
+    .column h1 {
+    font-size: 25px;
+    }
+    .redes{
+    display: flex;
+    margin-top: 15px;
+    }
+    .redes img{
+    width: 40px;
+    height: 40px;
+    }
+    .redes label{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 25px;
+    }
+    .column2{
+    max-width: 600px;
+    }
+    .column2 h1{
+    font-size: 22px;
+    }.contacto{
+    display: flex;
+    margin-top: 20px;
+    }
+    .contacto img{
+    width: 40px;
+    height: 40px;
+    }
+    .contacto label{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+    }
+    .contenedorCopy{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    }
+    .contCopy{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    }
+    .copyright{
+    text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 1100px){
+   
+    .contBody{
+        flex-wrap: wrap;
+    }
+    .column,
+    .column2{
+        margin-top: 40px;
+    }
+
+
+}
+@media screen and (max-width: 700px){
+    
+    .ancho{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $colorFondo;
+        margin: auto;
+        flex-direction: column;
+
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 35px;
+
+    }
+    
+    .contBody{
+        flex-wrap: wrap;
+    }
+    .column,
+    .column2{
+        margin-top: 40px;
+    }
+    .nombre, .email, .telefono, .asunto, .mensagge{
+        width: 88%;
+    }
+    .article1{
+        grid-column: 1/-1;
+
+    }
+    .sidebar{
+        grid-column: 1/-1;
+    }
+
+
+
+}
+
